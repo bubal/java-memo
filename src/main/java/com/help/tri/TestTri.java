@@ -4,7 +4,7 @@ public class TestTri {
 
 	public static void main(String[] args) {
 		
-		int tableau[]={15,3,52,81,41,0,-2,3,9,105};
+		int tableau[]={15,3,52,81,41,0,-2,3,9};
 		int tabout[];
 		
 		ArbreTri arbrenbr = new ArbreTri(tableau);
