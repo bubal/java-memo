@@ -2,8 +2,8 @@ package com.help.tri;
 
 public class ArbreTri {
 
-	private int tableauIn[];
-	private int tableauOut[];
+	private int [] tableauIn;
+	private int [] tableauOut;
 	private Node arbre;
 	private int index;
 

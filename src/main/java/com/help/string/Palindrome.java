@@ -21,7 +21,7 @@ public class Palindrome {
 				i++;
 				j--;
 			}
-			return (i>=taille/2);
+			return i>=taille/2;
 		}
 		
 		public boolean checkCaseOff(){
@@ -32,7 +32,7 @@ public class Palindrome {
 				i++;
 				j--;
 			}
-			return (i>=taille/2);
+			return i>=taille/2;
 		}
 		
 		

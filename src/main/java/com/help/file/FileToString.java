@@ -17,9 +17,9 @@ public class FileToString {
 		this.filename = filename;
 	}
 
-	public List<String> LineToList() throws IOException {
+	public List<String> lineToList() throws IOException {
 		
-		List<String> newligneList= new ArrayList<String>();
+		List<String> newligneList= new ArrayList<>();
 		FileReader fr;
 		BufferedReader br;
 		
@@ -36,24 +36,24 @@ public class FileToString {
 		return newligneList;
 	}
 	
-	public String [] LineToTab() throws IOException{
-		int taille = LineToList().size();
-		String tabString [] = new String[taille];
+	public String [] lineToTab() throws IOException{
+		int taille = lineToList().size();
+		String [] tabString = new String[taille];
 		for (int i=0; i < taille; i++){
 			tabString[i] = this.ligneList.get(i);
 		}
 		return tabString;
 	}
 
-	public Map<Integer,String> LineToHash() throws IOException{
+	public Map<Integer,String> lineToHash() throws IOException{
 		
-		int taille = LineToList().size();
-		Map<Integer,String> HashString = new HashMap<Integer,String>();
+		int taille = lineToList().size();
+		Map<Integer,String> hashString = new HashMap<>();
 		
 		for (int i=0; i < taille; i++){
-			HashString.put(new Integer(i), this.ligneList.get(i));
+			hashString.put(new Integer(i), this.ligneList.get(i));
 		}
-		return HashString;
+		return hashString;
 	}
 	
 }
